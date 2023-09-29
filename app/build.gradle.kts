@@ -43,6 +43,8 @@ dependencies {
 
     // ROOM
     implementation ("androidx.room:room-runtime:2.5.2")
+    implementation("androidx.navigation:navigation-fragment:2.5.3")
+    implementation("androidx.navigation:navigation-ui:2.5.3")
     annotationProcessor ("androidx.room:room-compiler:2.5.2")
 
     // ViewModel
