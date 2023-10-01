@@ -42,9 +42,7 @@ public class FavoriteFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         MealAdapter adapter = new MealAdapter(
-                mealId -> {
-                    onItemClick(mealId);
-                },
+                this::onItemClick,
             new MealComparator()
         );
         setupRecyclerView(adapter);

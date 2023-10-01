@@ -65,7 +65,6 @@ public class FoodListFragment extends Fragment {
                     Toast.makeText(requireContext(), mealResponse.message, Toast.LENGTH_SHORT).show();
                 } else if (mealResponse.status == Status.LOADING) {
                     binding.progressBar.setVisibility(View.VISIBLE);
-                    Toast.makeText(requireContext(), "loading", Toast.LENGTH_SHORT).show();
                 }
         });
     }
