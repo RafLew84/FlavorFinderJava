@@ -36,11 +36,5 @@ public class MealViewHolder extends RecyclerView.ViewHolder {
         imageLoader.enqueue(request);
 
         binding.getRoot().setOnClickListener(v -> onItemClickListener.onItemClick(item.idMeal));
-
-//        binding.getRoot().setOnClickListener(view -> {
-//            NavDirections action = FoodListFragmentDirections
-//                    .actionFoodListFragmentToDetailFragment();
-//            Navigation.findNavController(binding.getRoot()).navigate(action);
-//        });
     }
 }
